@@ -12,12 +12,16 @@ of feature maps I was creating for each layer. This was because my GAN was repli
 the detail so I decided to add more layers. To allow the generator to develop more complex knowledge of creating sharp curves for the numbers.
 
 ## General
+https://github.com/user-attachments/assets/af6429de-738c-46bb-a932-e5c169eafbab
+This is a video the output of every step created from the GEN, I think this is a good visual of way of seeing a GAN, work as
+although by the end it cannot create perfect images, you can see how the image evolve from simple circles to advanced characters
+with curves, and by end you can see the iamge morphing into different numbers.
+
 
 This is a graph of the generator loss and discriminator loss, where each marking is after 20 pass-throughs of the GAN.
 ![image](https://github.com/user-attachments/assets/5dd68439-bd61-4bae-8485-306502ca8a5a)
 
-This is a video the output of every step created from the GEN, I think this is a good visual of way of seeing a GAN, work as
-although by the end it cannot create perfect images, you can see how the image evolve from simple circles to advanced characters
-with curves, and by end you can see the iamge morphing into different numbers.
-https://github.com/user-attachments/assets/af6429de-738c-46bb-a932-e5c169eafbab
 
+## Other
+The final weights are not really useful due to mode collapse where a GAN will not produce diverse outputs and only produces the same images,
+even though the input is random noise.
