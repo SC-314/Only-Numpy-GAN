@@ -22,3 +22,10 @@ store_constant_images = []
 
 np.random.seed(42)
 test_noise = list(np.random.normal(0,1, (6, 100)))
+
+data = []
+sols = []
+n_classes = 10
+for i in range(n_classes):
+    for j in range(200): # Change the file address to your own, with each image having image_n.jpg
+        data.append((np.array(Image.open(f'C:/Users/Sam/Desktop/Generative Adversarial Network/Data/trainingSet/trainingSet/{i}/image_{j}.jpg').convert('L'), dtype=np.float32))/255-0.10)
